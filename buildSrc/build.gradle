@@ -1,11 +1,12 @@
 plugins {
 	id "java-gradle-plugin"
-	id "io.spring.javaformat" version "${javaFormatVersion}"
+	/*id "io.spring.javaformat" version "${javaFormatVersion}"*/
 	id "checkstyle"
 	id "eclipse"
 }
 
 repositories {
+	maven { url "https://maven.aliyun.com/repository/public" }
 	mavenCentral()
 	gradlePluginPortal()
 }
